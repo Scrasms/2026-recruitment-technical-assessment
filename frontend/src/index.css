@@ -13,6 +13,14 @@
   padding: 0;
 }
 
+body {
+  padding: 3px 10px;
+}
+
+.centre {
+  margin: 0 auto;
+}
+
 .flex {
   display: flex;
 }

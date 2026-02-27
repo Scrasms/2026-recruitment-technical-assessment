@@ -5,6 +5,7 @@ import gridView from './assets/gridView.svg';
 import darkMode from './assets/darkMode.svg';
 import Header from './components/Header/Header';
 import Icon from './components/Icon/Icon';
+import Search from './components/Search/Search';
 import './App.css';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
   const headerRight = (
     <div id="icon-bar" className="flex justify-centre align-centre">
       <Icon image={search} />
-      <Icon image={gridView} invert={true}/>
+      <Icon image={gridView} invert={true} />
       <Icon image={map} />
       <Icon image={darkMode} />
     </div>
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       <Header leftChildren={headerLeft} rightChildren={headerRight} />
+      <Search />
     </>
   );
 }

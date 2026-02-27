@@ -1,9 +1,11 @@
-import "./Button.css";
+import './Button.css'
 
-function Button({ className, children, onClick }) {
+function Button({ className, children }) {
   return (
-    <button className={className} onClick={onClick}>
-      {children}
+    <button className={className}>
+      <div className="button-contents flex justify-start align-centre">
+        {children}
+      </div>
     </button>
   );
 }

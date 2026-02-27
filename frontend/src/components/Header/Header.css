@@ -1,7 +1,7 @@
 header {
-  padding: 3px 10px;
   background-color: var(--primary-colour);
   border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 5px;
 }
 
 header img {

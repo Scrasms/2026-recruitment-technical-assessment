@@ -2,9 +2,9 @@ import search from '../../assets/search.svg';
 import filterAlt from '../../assets/filter_alt.svg';
 import filterList from '../../assets/filter_list.svg';
 import Button from '../Button/Button';
-import './Search.css';
+import './SearchBar.css';
 
-function Search() {
+function SearchBar() {
   return (
     <>
       <div className="search-container flex justify-between">
@@ -27,4 +27,4 @@ function Search() {
   );
 }
 
-export default Search;
+export default SearchBar;

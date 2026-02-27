@@ -1,0 +1,58 @@
+.room-container {
+  position: relative;
+  height: 257px;
+  border-radius: 6px;
+  overflow: hidden;
+  flex: 1;
+  flex-basis: 223px;
+}
+
+.room-container img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.room-available {
+  gap: 6px;
+  height: 26px;
+  width: 103px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 8px;
+  z-index: 1;
+  margin: 8px;
+}
+
+.room-available p {
+  font-size: 0.5rem;
+}
+
+.green-dot {
+  height: 6px;
+  width: 6px;
+  background-color: #4cae55;
+  border-radius: 50%;
+}
+
+.room-name {
+  height: 36px;
+  width: 210px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 8px auto;
+  padding-left: 10px;
+  background-color: var(--secondary-colour);
+  border-radius: 5px;
+  color: var(--primary-colour);
+  z-index: 3;
+}
+
+.room-name p {
+  font-size: 0.6rem;
+}

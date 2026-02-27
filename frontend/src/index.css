@@ -53,6 +53,10 @@ body {
   flex: 1;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .width-full {
   width: 100%;
 }

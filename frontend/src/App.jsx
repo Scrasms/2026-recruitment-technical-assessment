@@ -5,7 +5,9 @@ import gridView from './assets/gridView.svg';
 import darkMode from './assets/darkMode.svg';
 import Header from './components/Header/Header';
 import Icon from './components/Icon/Icon';
-import Search from './components/Search/Search';
+import SearchBar from './components/SearchBar/SearchBar';
+import Room from './components/Room/Room';
+import data from './assets/data.json';
 import './App.css';
 
 function App() {
@@ -28,7 +30,17 @@ function App() {
   return (
     <>
       <Header leftChildren={headerLeft} rightChildren={headerRight} />
-      <Search />
+      <SearchBar />
+      <section className="room-grid flex flex-wrap">
+        {data.map((room, index) => (
+          <Room
+            name={room.name}
+            rooms_available={room.rooms_available}
+            building_picture={room.building_picture}
+            key={index}
+          />
+        ))}
+      </section>
     </>
   );
 }

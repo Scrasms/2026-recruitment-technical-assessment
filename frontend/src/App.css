@@ -1,3 +1,7 @@
 #icon-bar {
   gap: 4px;
 }
+
+.room-grid {
+  gap: 13px;
+}

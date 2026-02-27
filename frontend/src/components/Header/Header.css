@@ -1,0 +1,17 @@
+header {
+  padding: 3px 10px;
+  background-color: var(--primary-colour);
+  border-bottom: 1px solid #f2f2f2;
+}
+
+header img {
+  height: 32px;
+  width: 32px;
+}
+
+header h1 {
+  font-family: "Josefin Sans", sans-serif;;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--secondary-colour);
+}

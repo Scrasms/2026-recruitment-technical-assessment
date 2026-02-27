@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import freeRoomsLogo from './assets/freeRoomsLogo.png';
+import search from './assets/search.svg';
+import map from './assets/map.svg';
+import gridView from './assets/gridView.svg';
+import darkMode from './assets/darkMode.svg';
+import Header from './components/Header/Header';
+import Icon from './components/Icon/Icon';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const headerLeft = (
+    <div className="flex align-centre">
+      <img src={freeRoomsLogo} alt="orange door, open" />
+      <h1>Freerooms</h1>
+    </div>
+  );
+
+  const headerRight = (
+    <div id="icon-bar" className="flex justify-centre align-centre">
+      <Icon image={search} />
+      <Icon image={gridView} invert={true}/>
+      <Icon image={map} />
+      <Icon image={darkMode} />
+    </div>
+  );
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header leftChildren={headerLeft} rightChildren={headerRight} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

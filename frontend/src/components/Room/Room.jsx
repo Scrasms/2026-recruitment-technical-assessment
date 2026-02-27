@@ -1,7 +1,6 @@
 import './Room.css';
 
 function Room({ name, rooms_available, building_picture }) {
-  console.log(building_picture)
   return(
     <>
       <article className="room-container width-full">

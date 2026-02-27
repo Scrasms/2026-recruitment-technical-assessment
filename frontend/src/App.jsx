@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import freeRoomsLogo from './assets/freeRoomsLogo.png';
+import freeRoomsDoorClosed from './assets/freeroomsDoorClosed.png';
 import search from './assets/search.svg';
 import map from './assets/map.svg';
 import gridView from './assets/gridView.svg';
@@ -11,9 +13,21 @@ import data from './assets/data.json';
 import './App.css';
 
 function App() {
+  // I didn't have enough time to implement fully responsive CSS
+  // so the site is best viewed at 1190 x 626 pixels
+  const [open, setOpen] = useState(true);
+
+  const handleOpen = () => {
+    if (open) {
+      setOpen(false);
+    } else {
+      setOpen(true);
+    }
+  };
+
   const headerLeft = (
     <div className="flex align-centre">
-      <img src={freeRoomsLogo} alt="orange door, open" />
+      <img src={open ? freeRoomsLogo : freeRoomsDoorClosed} onClick={handleOpen} />
       <h1>Freerooms</h1>
     </div>
   );
